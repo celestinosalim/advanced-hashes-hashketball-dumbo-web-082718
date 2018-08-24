@@ -133,7 +133,7 @@ end
 
 def player_by_name(number)
   game_hash.each do |team, team_data|
-    team_data[:player].each do |stats|
+    team_data[:players].each do |stats|
       if stats[:number] == number
         binding.pry
         return stats[:player_name]
@@ -141,7 +141,7 @@ def player_by_name(number)
     end
   end
 end
-puts player_by_name(33) 
+puts player_by_name(33)
 
 def shoe_size(player_name)
   game_hash.each do |team, team_data|
