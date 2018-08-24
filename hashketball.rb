@@ -131,6 +131,13 @@ def num_points_scored(player_name)
   end
 end
 
+def player_by_name(number)
+  game_hash.each do |team, team_data|
+    team_data[:player].each do |stats|
+      if stats[:number] == stats
+        binding.py
+        return stats[:player_name]
+
 def shoe_size(player_name)
   game_hash.each do |team, team_data|
     # binding.pry
