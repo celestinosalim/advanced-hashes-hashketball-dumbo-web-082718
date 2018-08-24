@@ -218,9 +218,9 @@ def big_shoe_rebounds
         # binding.pry
         if player == :players
           # binding.pry
-          stats.each do |shoe|
+          stats.each do |x|
             # binding.pry
-            if shoe[:shoe] > shoe_size
+            if x[:shoe] > shoe_size
               # binding.pry
               big_foot = x[:player_name]
               shoe_size = x[:shoe]
